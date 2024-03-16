@@ -1,0 +1,43 @@
+track_name,country,race_number,position,name_id,fastest_lap
+Bahrain GP, Bahrain,01,01,VER,true
+Bahrain GP, Bahrain,01,02,PER,false
+Bahrain GP, Bahrain,01,03,SAI,false
+Bahrain GP, Bahrain,01,04,LEC,false
+Bahrain GP, Bahrain,01,05,RUS,false
+Bahrain GP, Bahrain,01,06,NOR,false
+Bahrain GP, Bahrain,01,07,HAM,false
+Bahrain GP, Bahrain,01,08,PIA,false
+Bahrain GP, Bahrain,01,09,ALO,false
+Bahrain GP, Bahrain,01,10,STR,false
+Bahrain GP, Bahrain,01,11,GUA,false
+Bahrain GP, Bahrain,01,12,MAG,false
+Bahrain GP, Bahrain,01,13,RIC,false
+Bahrain GP, Bahrain,01,14,TSU,false
+Bahrain GP, Bahrain,01,15,ALB,false
+Bahrain GP, Bahrain,01,16,HUL,false
+Bahrain GP, Bahrain,01,17,OCO,false
+Bahrain GP, Bahrain,01,18,GAS,false
+Bahrain GP, Bahrain,01,19,BOT,false
+Bahrain GP, Bahrain,01,20,SAR,false
+Jeddah, Saudi Arabia,02,01,VER,false
+Jeddah, Saudi Arabia,02,02,PER,false
+Jeddah, Saudi Arabia,02,03,LEC,true
+Jeddah, Saudi Arabia,02,04,PIA,false
+Jeddah, Saudi Arabia,02,05,ALO,false
+Jeddah, Saudi Arabia,02,06,RUS,false
+Jeddah, Saudi Arabia,02,07,BEA,false
+Jeddah, Saudi Arabia,02,08,NOR,false
+Jeddah, Saudi Arabia,02,09,HAM,false
+Jeddah, Saudi Arabia,02,10,HUL,false
+Jeddah, Saudi Arabia,02,11,ALB,false
+Jeddah, Saudi Arabia,02,12,MAG,false
+Jeddah, Saudi Arabia,02,13,OCO,false
+Jeddah, Saudi Arabia,02,14,SAR,false
+Jeddah, Saudi Arabia,02,15,TSU,false
+Jeddah, Saudi Arabia,02,16,RIC,false
+Jeddah, Saudi Arabia,02,17,BOT,false
+Jeddah, Saudi Arabia,02,18,GUA,false
+Jeddah, Saudi Arabia,02,DNF,STR,false
+Jeddah, Saudi Arabia,02,DNF,GAS,false
+
+
