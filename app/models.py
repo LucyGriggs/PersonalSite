@@ -9,14 +9,7 @@ engine = create_engine(DB_URI)
 
 # Create base definitions
 Base = declarative_base()
-
-# user table
-class User(Base):
-    __tablename__ = 'users'
-    id = Column(Integer, primary_key=True)
-    username = Column(String(24), unique=True, nullable=False)
-    password_hash = Column(String(24), nullable=False)
-    
+  
 # driver table
 class Driver(Base):
     __tablename__ = 'drivers'

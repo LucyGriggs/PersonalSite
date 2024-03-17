@@ -1,0 +1,86 @@
+.heading1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 36px;
+  font-variant: small-caps;
+  color: #333;
+}
+
+.heading2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 26px;
+  font-variant: small-caps;
+  font-weight: 700;
+  color: #333;
+}
+
+.heading3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-variant: small-caps;
+  color: #333;
+}
+
+/*
+.body {
+
+} 
+*/
+
+.button {
+  background-color: #CC7333;
+  color: #fff; /* white */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container {
+  display:flex;
+  border-radius: 10px;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.login-form {
+  flex: 2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.race-list {
+  height: 300px;
+  overflow-y: auto;
+  border: 5px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.driver-list {
+  height: 300px;
+  overflow-y: auto;
+  border: 5px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.race-date {
+  font-style: oblique;
+}
+
+.flag {
+  width: auto;
+  height: 30px;
+  margin-right: 10px;
+  mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.photo {
+  width: 50px;
+  height: 100px;
+  margin-right: 10px;
+}
