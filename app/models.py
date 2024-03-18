@@ -1,3 +1,4 @@
+from django.db import models
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey, create_engine, Date, Float
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
@@ -9,7 +10,15 @@ engine = create_engine(DB_URI)
 
 # Create base definitions
 Base = declarative_base()
-  
+
+# Create your models here.
+
+#class TestPost(models.Model):
+#    title = models.CharField(max_length=255)
+#    body = models.TextField()
+#    def __str__(self):
+#        return self.title
+    
 # driver table
 class Driver(Base):
     __tablename__ = 'drivers'
@@ -18,6 +27,7 @@ class Driver(Base):
     team = Column(String(48), nullable=False)
     price = Column(Float, nullable=False)
     points = Column(Float, nullable=False)
+    flag = Column(String, nullable=False)
     
 # race table
 class Race(Base):
