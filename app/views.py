@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpRequest
+from datetime import datetime
 
 from .models import Race
 from .models import Driver
@@ -11,18 +13,28 @@ def race_list(request):
 
 def driver_list(request):
     drivers = Driver.objects.all() # Fetch all drivers from the database
-    return render(request, 'driver_lsit.html', {'drivers': drivers})
+    return render(request, 'driver_list.html', {'drivers': drivers})
 
-
-#TESTING
 def index(request):
-    now = datetime.now()
-
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
     return render(
         request,
-        "app/index.html",  # Relative path from the 'templates' folder to the template file
-        # "index.html", # Use this code for VS 2017 15.7 and earlier
+        'app/index.html',
         {
-            'content': "<strong>Hello Django!</strong> on " + now.strftime("%A, %d %B, %Y at %X")
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
+
+def about(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/about.html',
+        {
+            'title':'About Page',
+            'year':datetime.now().year,
         }
     )

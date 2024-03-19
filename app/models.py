@@ -12,12 +12,6 @@ engine = create_engine(DB_URI)
 Base = declarative_base()
 
 # Create your models here.
-
-#class TestPost(models.Model):
-#    title = models.CharField(max_length=255)
-#    body = models.TextField()
-#    def __str__(self):
-#        return self.title
     
 # driver table
 class Driver(Base):

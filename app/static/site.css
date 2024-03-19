@@ -1,0 +1,191 @@
+﻿header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #CC7333;
+    color: #333;
+}
+
+.heading1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 52px;
+    font-variant: small-caps;
+    color: #333;
+}
+
+.heading2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 26px;
+    font-variant: small-caps;
+    font-weight: 700;
+    color: #333;
+}
+
+.heading3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    color: #333;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    background-color: #333;
+    color: #fff; /* white */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+
+.parent {
+    text-align: center;
+}
+
+.child {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+}
+
+.sidebar {
+    flex: 1;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    content: "";
+    clear: both;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: #747474;
+}
+
+.login-form-container {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    height: flex;
+}
+
+.login-form {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+.login-form form {
+    padding: 1px;
+    border-radius: 10px;
+    background-color: #CC7333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 20px;
+    background-color: antiquewhite;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-form p {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-form p a {
+    color: #333;
+    text-decoration: none;
+}
+
+.race-list {
+    height: 300px;
+    overflow-y: auto;
+    border: 5px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Helvetica, sans-serif;
+}
+
+.driver-list {
+    height: 300px;
+    overflow-y: auto;
+    border: 5px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Helvetica, sans-serif;
+}
+
+.race-date {
+    font-style: oblique;
+    font-size: small;
+    font-family: Helvetica, sans-serif;
+}
+
+.flag {
+    width: auto;
+    height: 30px;
+    margin-right: 10px;
+    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.photo {
+    width: 50px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.navbar {
+    background-color: lightslategray;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 8px 5px 8px 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    margin-left: 30px;
+}
+
+.body-content {
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

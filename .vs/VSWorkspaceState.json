@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\static",
+    "\\app\\templates",
+    "\\app\\templates\\app",
+    "\\config",
+    "\\config\\settings"
+  ],
+  "SelectedNode": "\\config\\wsgi.py",
+  "PreviewInSolutionExplorer": false
+}
