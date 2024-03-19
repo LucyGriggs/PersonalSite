@@ -1,4 +1,4 @@
-from .base import *
+from .settings import *
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'abc'
