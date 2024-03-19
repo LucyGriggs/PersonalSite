@@ -1,0 +1,8 @@
+# Site settings
+title: F1 Fantasy Clone
+author:
+  name: Lucy Griggs
+description: "there is only confusion here"
+
+# Build settings
+remote_theme: jekyll/minima
