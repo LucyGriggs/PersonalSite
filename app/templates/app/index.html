@@ -3,51 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Home</title>
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="container">
+    {% block content %}
+    {{ content }}
+    {% endblock %}
+    {{ content }}
+
         <header>
             <h1 class="heading1"> Lucy's App</h1>
-            <button id="loginButton">Login</button>
+            <button class="button" id="loginButton">Login</button>
+
+            <div class="login-form-container">
+
+                <form class="login-form" id="loginForm" method="post" action="{% url 'index' %}">
+                    <!-- {% csrf_token %} -->
+                    <input type="text" id="username" name="username" placeholder="username"><br>
+                <input type="password" id="password" name="password" placeholder="********"><br>
+                <button class="button" type="submit" id="loginSubmitButton">Login</button>
+                <p> Don't have an account? <a href="#">Register</a></p>
+                </form>
+
+            </div>
+
         </header>
-        <main>
-            <!-- Info and things to see without being logged in -->
-            <div class="container">
-                <div class="sidebar">
-                    <div class="race-list">
-                        <!-- Embedded scroll window with race information -->
-                        <div class="race-item {% if race.is_next_race %}next-race{% endif %}">
-                            <span class="race-date"> {{ race.date }} </span>
-                            <span class="heading2"> {{ race.track_name }} </span>
-                            <span> {{ race.country}} </span>
-                            <img src="{{ race.country_flag_url }}" alt="{{ race.flag }}">
+    
+    <main>
+        <!-- Info and things to see without being logged in -->
+        <div class='parent'>
+            <div class="child">
+                <div class="container">
+                    <div class="sidebar">
+                        <div class="race-list">
+                            <!-- Embedded scroll window with race information -->
+                            <div class="race-item {% if race.is_next_race %}next-race{% endif %}">
+                                <span class="heading2"> race.track_name </span>
+                                <span class="race-date"> race.date </span>
+                                <span> race.country </span>
+                                <img src="{{ race.country_flag_url }}" alt=" race.flag ">
+                            </div>
                         </div>
-                    </div>
-                    <div class="driver-list">
-                        <!-- List of drivers with names, teams, and photos -->
-                        <span> {{ driver.name }} </span>
-                        <span class="heading2"> {{ driver.id }} </span>
-                        <span> {{ driver.team}} </span>
-                        <img src="{{ driver.driver_portrait_url }}" alt="{{ driver.photo }}">
                     </div>
                 </div>
             </div>
-        </main>
-            <form method="post" action="{% url 'login' %}">
-                <!-- {% csrf_token %} -->
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="username"><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="********"><br>
-                <button type="submit" value="Login"></button>
-                <p> Don't have an account? <a href="#">Register</a></p>
-            </form>
+            <div class="child">
+                <div class="container">
+                    <div class="driver-list">
+                        <!-- List of drivers with names, teams, and photos -->
+                        <span class="heading2">  driver.id </span>
+                        <span> driver.name </span>
+                        <span>  driver.team </span>
+                        <img src="{{ driver.driver_portrait_url }}" alt=" driver.photo ">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </main>
+    <!-- <div><a href="about">About</a></div> -->
+    
     <!-- <button class="button">Register</button> -->
 </body>
 </html>

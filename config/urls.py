@@ -19,12 +19,13 @@ Including another URLconf
 #from django.contrib import admin
 #from django.urls import path
 from django.urls import include, re_path
-
+import app.views
 
 urlpatterns = [
     
     # Uncomment the next line to enable the admin:
     #path('admin/', admin.site.urls)
     re_path(r'^$', app.views.index, name='index'),
-    re_path(r'^$', app.views.indwx, name='home')
+    re_path(r'^home$', app.views.index, name='home'),
+    re_path(r'^about$', app.views.about, name='about'),
 ]
